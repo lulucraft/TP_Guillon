@@ -64,9 +64,34 @@
         <PackageReference Include="CommunityToolkit.Maui.Markup" Version="4.*" />
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
         <PackageReference Include="CompiledBindings.MAUI" Version="1.*" />
+        <PackageReference Include="Microsoft.Playwright" Version="1.46.0" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\TP_Guillon.Context\TP_Guillon.Context.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <MauiXaml Update="Views\AccueilPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+      <MauiXaml Update="Views\EditionMateriauPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+      <MauiXaml Update="Views\EditionTypePage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+      <MauiXaml Update="Views\FicheMeublePage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+      <MauiXaml Update="Views\ListeMateriauPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+      <MauiXaml Update="Views\ListeMeublePage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+      <MauiXaml Update="Views\ListeTypePage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
     </ItemGroup>
 </Project>

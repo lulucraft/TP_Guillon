@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="TP_Guillon.Views.FicheMeublePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:TP_Guillon.ViewModels"
+    xmlns:local="clr-namespace:TP_Guillon.Views"
+    x:DataType="vm:FicheMeubleViewModel"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <StackLayout
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            <HorizontalStackLayout
+                HorizontalOptions="Center">
+                <Label
+                    Text="Id meuble : "
+                    WidthRequest="170"
+                    VerticalOptions="Center"
+                    TextColor="{StaticResource Yellow200Accent}" />
+                <Entry
+                    Text="{Binding Meuble.IdMeuble}"
+                    MaxLength="100"
+                    WidthRequest="100"
+                    IsEnabled="False"
+                    TextColor="{StaticResource Blue300Accent}" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                HorizontalOptions="Center">
+                <Label
+                    Text="Date de déclenchement : "
+                    WidthRequest="170"
+                    VerticalOptions="Center"
+                    TextColor="{StaticResource Yellow200Accent}" />
+                <Entry
+                    Text="{Binding Meuble.Reference}"
+                    WidthRequest="100"
+                    IsEnabled="False"
+                    TextColor="{StaticResource Blue300Accent}" />
+            </HorizontalStackLayout>
+            <!--<HorizontalStackLayout
+        HorizontalOptions="Center">
+                <Label
+            Text="Puissance de l'Meuble : "
+            WidthRequest="170"
+            VerticalOptions="Center"
+            TextColor="{StaticResource Yellow200Accent}" />
+                <Entry
+            Text="{Binding Meuble.PuissanceEstimee}"
+            WidthRequest="100"
+            IsEnabled="False"
+            TextColor="{StaticResource Blue300Accent}" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+        HorizontalOptions="Center">
+                <Label
+            Text="Site de la détonation : "
+            WidthRequest="170"
+            VerticalOptions="Center"
+            TextColor="{StaticResource Yellow200Accent}" />
+                <Entry
+            Text="{Binding Meuble.IdSiteNavigation.Designation}"
+            WidthRequest="100"
+            IsEnabled="False"
+            TextColor="{StaticResource Blue300Accent}" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+        HorizontalOptions="Center">
+                <Label
+            Text="Type de tir : "
+            WidthRequest="170"
+            VerticalOptions="Center"
+            TextColor="{StaticResource Yellow200Accent}" />
+                <Entry
+            Text="{Binding Meuble.IdTypeNavigation.Libelle}"
+            WidthRequest="100"
+            IsEnabled="False"
+            TextColor="{StaticResource Blue300Accent}" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+        HorizontalOptions="Center">
+                <Label
+            Text="Catégorie du tir : "
+            WidthRequest="170"
+            VerticalOptions="Center"
+            TextColor="{StaticResource Yellow200Accent}" />
+                <Entry
+            Text="{Binding Meuble.IdCategorieNavigation.Nom}"
+            WidthRequest="100"
+            IsEnabled="False"
+            TextColor="{StaticResource Blue300Accent}" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+        HorizontalOptions="Center">
+                <Label
+            Text="Bombe fission : "
+            WidthRequest="170"
+            VerticalOptions="Center"
+            TextColor="{StaticResource Yellow200Accent}" />
+                <Entry
+            Text="{Binding Meuble.EstFission, Converter={StaticResource BoolToYesNo}}"
+            WidthRequest="100"
+            IsEnabled="False"
+            TextColor="{StaticResource Blue300Accent}" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+        HorizontalOptions="Center">
+                <Button
+            Command="{Binding RetourCommand}"
+            Style="{StaticResource Action}"
+            Text="Retour" />
+            </HorizontalStackLayout>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

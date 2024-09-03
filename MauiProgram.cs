@@ -34,6 +34,22 @@ namespace TP_Guillon
             builder.Services.AddTransient<NewEventViewModel>();
             builder.Services.AddTransient<NewEventPage>();
 
+            builder.Services.AddSingleton<AccueilViewModel>();
+            builder.Services.AddSingleton<AccueilPage>();
+            builder.Services.AddSingleton<IMateriauService, MateriauService>();
+            builder.Services.AddSingleton<ListeMateriauViewModel>();
+            builder.Services.AddSingleton<ListeMateriauPage>();
+            builder.Services.AddSingleton<EditionMateriauViewModel>();
+            builder.Services.AddSingleton<EditionMateriauPage>();
+            builder.Services.AddSingleton<IMeubleService, MeubleService>();
+            builder.Services.AddSingleton<ListeMeubleViewModel>();
+            builder.Services.AddSingleton<ListeMeublePage>();
+            builder.Services.AddSingleton<FicheMeubleViewModel>();
+            builder.Services.AddSingleton<FicheMeublePage>();
+            builder.Services.AddSingleton<ITypeService, TypeService>();
+            builder.Services.AddSingleton<ListeTypeViewModel>();
+            builder.Services.AddSingleton<ListeTypePage>();
+
             // Ajouter la configuration des secrets utilisateur
             var configuration = new ConfigurationBuilder()
                 .Build();

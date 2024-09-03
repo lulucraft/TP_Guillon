@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="TP_Guillon.Views.EditionMateriauPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:helpers="clr-namespace:TP_Guillon.Helpers"
+    xmlns:vm="clr-namespace:TP_Guillon.ViewModels"
+    xmlns:local="clr-namespace:TP_Guillon.Views"
+    xmlns:m="clr-namespace:TP_Guillon.Context.Models;assembly=TP_Guillon.Context"
+    x:DataType="vm:EditionMateriauViewModel"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label Text="Nom :" VerticalOptions="Center" WidthRequest="70" />
+                <Entry Text="{Binding Materiau.Nom}" WidthRequest="180" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button Text="Enregistrer" Command="{Binding EnregistrerCommand}"
+                        Style="{StaticResource PrimaryAction}">
+                    <Button.ImageSource>
+                        <FontImageSource FontFamily="MaterialDesignIcons" Glyph="{x:Static helpers:MaterialDesignIcons.ContentSave}" Size="26" />
+                    </Button.ImageSource>
+                </Button>
+                <Button Text="Annuler" Command="{Binding AnnulerCommand}"
+                        Style="{StaticResource Action}">
+                    <Button.ImageSource>
+                        <FontImageSource FontFamily="MaterialDesignIcons" Glyph="{x:Static helpers:MaterialDesignIcons.Cancel}" Size="26" />
+                    </Button.ImageSource>
+                </Button>
+            </HorizontalStackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

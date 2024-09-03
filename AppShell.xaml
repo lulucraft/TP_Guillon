@@ -26,7 +26,28 @@
         Uncomment the below section to enable Shell Flyout item(s)
         And ensure appropriate page definitions are available for it work as expected
     -->
-    <FlyoutItem Title="Calendar">
+    <FlyoutItem Title="Accueil">
+        <ShellContent
+            ContentTemplate="{DataTemplate vw:AccueilPage}"
+            Route="AccueilPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Liste Matériaux">
+        <ShellContent
+            ContentTemplate="{DataTemplate vw:ListeMateriauPage}"
+            Route="ListeMateriauPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Liste Meubles">
+        <ShellContent
+            ContentTemplate="{DataTemplate vw:ListeMeublePage}"
+            Route="ListeMeublePage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Liste Types">
+        <ShellContent
+            ContentTemplate="{DataTemplate vw:ListeTypePage}"
+            Route="ListeTypePage" />
+    </FlyoutItem>
+
+    <!--<FlyoutItem Title="Calendar">
         <ShellContent
             ContentTemplate="{DataTemplate vw:EventsPage}"
             Route="home" />
@@ -40,7 +61,7 @@
         <ShellContent
             ContentTemplate="{DataTemplate vw:SettingsPage}"
             Route="settings" />
-    </FlyoutItem>
+    </FlyoutItem>-->
     <!--
         When the Flyout is visible this will be a menu item you can tie a click behavior to
     -->

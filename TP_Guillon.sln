@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Packages.props = Directory.Packages.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP_Guillon.Context", "..\TP_Guillon.Context\TP_Guillon.Context.csproj", "{3CC0200C-082F-4039-9DAA-F6DA65B22AF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TP_Guillon.Context", "..\TP_Guillon.Context\TP_Guillon.Context.csproj", "{3CC0200C-082F-4039-9DAA-F6DA65B22AF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,7 +33,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		        SolutionGuid = {391F9765-9EEA-4C67-A05B-10C9B94AFA2C}
 		SolutionGuid = {83678807-761B-4A2A-8B4B-510D56A6AB39}
+		        SolutionGuid = {391F9765-9EEA-4C67-A05B-10C9B94AFA2C}
 	EndGlobalSection
 EndGlobal

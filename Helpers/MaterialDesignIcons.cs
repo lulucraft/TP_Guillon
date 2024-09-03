@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TP_Guillon.Helpers;
+﻿namespace TP_Guillon.Helpers;
 /// <summary>
 /// Classe générée avec https://andreinitescu.github.io/IconFont2Code
 /// En suivant la doc de https://cedricgabrang.medium.com/custom-fonts-material-design-icons-in-net-maui-acf59c9f98fe

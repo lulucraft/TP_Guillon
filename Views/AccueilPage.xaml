@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="TP_Guillon.Views.AccueilPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:TP_Guillon.ViewModels"
+    xmlns:local="clr-namespace:TP_Guillon.Views"
+    xmlns:helpers="clr-namespace:TP_Guillon.Helpers"
+    x:DataType="vm:AccueilViewModel"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <StackLayout
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            <Border VerticalOptions="Start" Padding="20" Margin="0,20,0,0" StrokeShape="RoundRectangle 40,0,0,40" BackgroundColor="#40000000">
+                <Label Text="Meubles Guillon" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="20" />
+            </Border>
+
+            <HorizontalStackLayout>
+                <Button
+                    Text="Afficher matériaux" Command="{Binding AfficherMateriauxCommand}"
+                    HorizontalOptions="Center" Style="{StaticResource PrimaryAction}">
+                    <Button.ImageSource>
+                        <FontImageSource FontFamily="MaterialDesignIcons" Glyph="{x:Static helpers:MaterialDesignIcons.ListBox}" Size="26" />
+                    </Button.ImageSource>
+                </Button>
+                <Button
+                    Text="Afficher types" Command="{Binding AfficherTypesCommand}"
+                    HorizontalOptions="Center" Style="{StaticResource PrimaryAction}">
+                    <Button.ImageSource>
+                        <FontImageSource FontFamily="MaterialDesignIcons" Glyph="{x:Static helpers:MaterialDesignIcons.ListBox}" Size="26" />
+                    </Button.ImageSource>
+                </Button>
+                <!--<Button
+                Grid.Column="3" FontFamily="MaterialDesignIcons" Text="{x:Static helpers:MaterialDesignIcons.ListBox}" FontSize="26" Padding="4"
+                Command="{Binding AfficherMateriauxCommand, Source={RelativeSource AncestorType={x:Type vm:ListeMateriauViewModel}}}"
+                CommandParameter="{Binding .}" VerticalOptions="Center" Margin="4" BackgroundColor="{StaticResource Primary}" />-->
+                <!--<Button
+                Grid.Column="3" FontFamily="MaterialDesignIcons" Text="{x:Static helpers:MaterialDesignIcons.ListBox}" FontSize="26" Padding="4"
+                Command="{Binding AfficherTypesCommand, Source={RelativeSource AncestorType={x:Type vm:ListeTypeViewModel}}}"
+                CommandParameter="{Binding .}" VerticalOptions="Center" Margin="4" BackgroundColor="{StaticResource Primary}" />-->
+            </HorizontalStackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
